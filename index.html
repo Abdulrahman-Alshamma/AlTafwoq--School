@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرسة التفوق | نحو مستقبل مشرق</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!--Google Fonts: Tajawal -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Header / Navbar -->
+    <header id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-5 bg-transparent text-white">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2 text-2xl font-extrabold group">
+                <div class="bg-accent-400 text-primary-950 p-2 rounded-lg group-hover:rotate-12 transition-transform duration-300">
+                    <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                </div>
+                <span>مدرسة التفوق</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#home" class="nav-link hover:text-accent-400 font-medium transition-colors">الرئيسية</a>
+                <a href="#about" class="nav-link hover:text-accent-400 font-medium transition-colors">عن المدرسة</a>
+                <a href="#infrastructure" class="nav-link hover:text-accent-400 font-medium transition-colors">المرافق</a>
+                <a href="#registration" class="bg-accent-400 text-primary-950 px-5 py-2 rounded-lg font-bold hover:bg-accent-500 transition-all shadow-lg hover:shadow-accent-400/30">سجل الآن</a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-primary-950 border-t border-primary-800 absolute w-full">
+            <nav class="flex flex-col p-6 gap-4">
+                <a href="#home" class="text-white hover:text-accent-400 font-medium py-2 border-b border-primary-800">الرئيسية</a>
+                <a href="#about" class="text-white hover:text-accent-400 font-medium py-2 border-b border-primary-800">عن المدرسة</a>
+                <a href="#infrastructure" class="text-white hover:text-accent-400 font-medium py-2 border-b border-primary-800">المرافق</a>
+                <a href="#registration" class="text-accent-400 font-bold py-2">سجل الآن</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary-950 via-primary-900 to-primary-800 z-10"></div>
+            <img src="https://picsum.photos/seed/school_arch/1920/1080" alt="School" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 z-10 opacity-10" style="background-image: radial-gradient(#e8fb70 1px, transparent 1px); background-size: 40px 40px;"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-20 text-center">
+            <div class="animate-fade-in-up">
+                <span class="inline-block py-1 px-3 rounded-full bg-accent-400/20 text-accent-400 border border-accent-400/30 text-sm font-bold mb-6 backdrop-blur-sm">
+                    التسجيل للعام الدراسي الجديد مفتوح
+                </span>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+                    نصنع المستقبل <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-l from-accent-400 to-yellow-200">بيدٍ أمينة</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    في مدرسة التفوق، نؤمن بأن كل طالب هو مشروع مميز. نقدم بيئة تعليمية متكاملة تجمع بين الأصالة والحداثة.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#registration" class="bg-accent-400 text-primary-950 px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent-500 transition-all shadow-[0_0_20px_rgba(232,251,112,0.3)] flex items-center justify-center gap-2">
+                        انضم إلينا اليوم
+                        <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#about" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-md px-8 py-4 rounded-lg transition-all text-lg">
+                        تعرف علينا
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/50 animate-bounce">
+            <i data-lucide="chevron-down" class="w-8 h-8"></i>
+        </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <div class="bg-white py-8 border-y border-gray-100 overflow-hidden relative">
+        <div class="container mx-auto px-6 mb-4 text-center">
+            <p class="text-primary-950 font-bold flex items-center justify-center gap-2">
+                <i data-lucide="camera" class="w-4 h-4 text-accent-500"></i>
+                أبناؤنا في أجمل لحظاتهم
+            </p>
+        </div>
+        <div class="flex w-full overflow-hidden">
+            <div class="flex animate-marquee hover:[animation-play-state:paused]">
+                <div class="flex gap-4 px-4">
+                    <img src="pexels-norma-mortenson-8456138.jpg" class="w-72 h-48 rounded-xl shadow-md object-cover" alt="School 1">
+                    <img src="pexels-max-fischer-5212345.jpg" class="w-72 h-48 rounded-xl shadow-md object-cover" alt="School 2">
+                    <img src="pexels-tima-miroshnichenko-5427865.jpg" class="w-72 h-48 rounded-xl shadow-md object-cover" alt="School 3">
+                    <img src="pexels-max-fischer-5212345.jpg" class="w-72 h-48 rounded-xl shadow-md object-cover" alt="School 4">
+                    <img src="pexels-tima-miroshnichenko-5428145.jpg" class="w-72 h-48 rounded-xl shadow-md object-cover" alt="School 5">
+                    <img src="pexels-gustavo-fring-5621936.jpg" class="w-72 h-48 rounded-xl shadow-md object-cover" alt="School 6">
+                </div>
+                <div class="flex gap-4 px-4">
+                    <img src="pexels-gustavo-fring-5621936.jpg" class="w-72 h-48 rounded-xl shadow-md object-cover" alt="School 1">
+                    <img src="pexels-max-fischer-5211478.jpg" class="w-72 h-48 rounded-xl shadow-md object-cover" alt="School 2">
+                    <img src="pexels-tima-miroshnichenko-5427865.jpg" class="w-72 h-48 rounded-xl shadow-md object-cover" alt="School 3">
+                    <img src="pexels-tima-miroshnichenko-5428145.jpg" class="w-72 h-48 rounded-xl shadow-md object-cover" alt="School 4">
+                    <img src="pexels-max-fischer-5212345.jpg" class="w-72 h-48 rounded-xl shadow-md object-cover" alt="School 5">
+                    <img src="pexels-norma-mortenson-8456138.jpg" class="w-72 h-48 rounded-xl shadow-md object-cover" alt="School 6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-background">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary-950 mb-6">من نحن</h2>
+                    <div class="w-20 h-1.5 bg-accent-400 mb-8 rounded-full"></div>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        مدرسة التفوق هي مؤسسة تعليمية رائدة تأسست بهدف بناء جيل واعٍ ومثقف، قادر على مواجهة تحديات المستقبل. نحن نجمع بين الخبرة التربوية العريقة وأحدث التقنيات التعليمية.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                        رؤيتنا لا تتوقف عند التلقين، بل تمتد لتشكيل الشخصية المتكاملة للطالب من خلال أنشطة متنوعة وبيئة محفزة.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 text-center">
+                            <span class="block text-3xl font-bold text-accent-500">+20</span>
+                            <span class="text-gray-500 text-sm">عاماً من الخبرة</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100 text-center">
+                            <span class="block text-3xl font-bold text-accent-500">1500+</span>
+                            <span class="text-gray-500 text-sm">طالب وطالبة</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal relative">
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent-400/20 rounded-full -z-10"></div>
+                    <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-primary-900/10 rounded-full -z-10"></div>
+                    <img src="pexels-vanda-zahorkova-1342417146-26319154.jpg" alt="School Principal" class="rounded-2xl shadow-xl w-full object-cover h-[400px]">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
+                <div class="reveal bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow border border-gray-100 text-center group">
+                    <div class="w-14 h-14 mx-auto bg-primary-50 rounded-full flex items-center justify-center text-primary-900 mb-4 group-hover:bg-accent-400 group-hover:text-primary-950 transition-colors">
+                        <i data-lucide="shield-check" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-950 mb-2">الأمانة</h3>
+                    <p class="text-gray-500 text-sm">نلتزم بأعلى معايير الأخلاق والمسؤولية.</p>
+                </div>
+                <div class="reveal bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow border border-gray-100 text-center group" style="transition-delay: 100ms;">
+                    <div class="w-14 h-14 mx-auto bg-primary-50 rounded-full flex items-center justify-center text-primary-900 mb-4 group-hover:bg-accent-400 group-hover:text-primary-950 transition-colors">
+                        <i data-lucide="lightbulb" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-950 mb-2">الإبداع</h3>
+                    <p class="text-gray-500 text-sm">نشجع التفكير خارج الصندوق وحل المشكلات.</p>
+                </div>
+                <div class="reveal bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow border border-gray-100 text-center group" style="transition-delay: 200ms;">
+                    <div class="w-14 h-14 mx-auto bg-primary-50 rounded-full flex items-center justify-center text-primary-900 mb-4 group-hover:bg-accent-400 group-hover:text-primary-950 transition-colors">
+                        <i data-lucide="users" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-950 mb-2">التعاون</h3>
+                    <p class="text-gray-500 text-sm">نزرع روح الفريق والعمل الجماعي.</p>
+                </div>
+                <div class="reveal bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow border border-gray-100 text-center group" style="transition-delay: 300ms;">
+                    <div class="w-14 h-14 mx-auto bg-primary-50 rounded-full flex items-center justify-center text-primary-900 mb-4 group-hover:bg-accent-400 group-hover:text-primary-950 transition-colors">
+                        <i data-lucide="award" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-950 mb-2">التميز</h3>
+                    <p class="text-gray-500 text-sm">نسعى دائماً للأفضل في كل تفاصيلنا.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Infrastructure Section-->
+    <section id="infrastructure" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary-950 mb-4">بنية تحتية متكاملة</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">نوفر بيئة تعليمية مناسبة تُحفز الابتكار وتدعم العملية التعليمية بأحدث التقنيات.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="reveal group rounded-2xl overflow-hidden shadow-lg cursor-pointer bg-white">
+                    <div class="h-48 overflow-hidden">
+                        <img src="pexels-gustavo-fring-5621935.jpg" alt="فصول ذكية" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 border-t border-gray-100">
+                        <h3 class="text-xl font-bold text-primary-950 mb-2 group-hover:text-accent-500 transition-colors">فصول ذكية</h3>
+                        <p class="text-gray-500 text-sm">شاشات تفاعلية وإنترنت فائق السرعة.</p>
+                    </div>
+                </div>
+                <div class="reveal group rounded-2xl overflow-hidden shadow-lg cursor-pointer bg-white" style="transition-delay: 100ms;">
+                    <div class="h-48 overflow-hidden">
+                        <img src="pexels-karola-g-8539752.jpg" alt="مختبرات" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 border-t border-gray-100">
+                        <h3 class="text-xl font-bold text-primary-950 mb-2 group-hover:text-accent-500 transition-colors">مختبرات العلوم</h3>
+                        <p class="text-gray-500 text-sm">معدات حديثة للتجارب العملية.</p>
+                    </div>
+                </div>
+                <div class="reveal group rounded-2xl overflow-hidden shadow-lg cursor-pointer bg-white" style="transition-delay: 200ms;">
+                    <div class="h-48 overflow-hidden">
+                        <img src="pexels-rdne-8499562 (1).jpg" alt="مكتبة" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 border-t border-gray-100">
+                        <h3 class="text-xl font-bold text-primary-950 mb-2 group-hover:text-accent-500 transition-colors">مكتبة شاملة</h3>
+                        <p class="text-gray-500 text-sm">آلاف الكتب والمراجع الرقمية.</p>
+                    </div>
+                </div>
+                <div class="reveal group rounded-2xl overflow-hidden shadow-lg cursor-pointer bg-white" style="transition-delay: 300ms;">
+                    <div class="h-48 overflow-hidden">
+                        <img src="pexels-tuan-vy-903011268-30754994.jpg" alt="ملاعب" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6 border-t border-gray-100">
+                        <h3 class="text-xl font-bold text-primary-950 mb-2 group-hover:text-accent-500 transition-colors">ملاعب رياضية</h3>
+                        <p class="text-gray-500 text-sm">ملاعب متعددة الاستخدامات مغطاة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="py-20 bg-primary-950 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-64 h-64 bg-accent-400/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary-800/30 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row reveal">
+                
+                <div class="p-8 md:p-12 w-full md:w-2/3">
+                    <h2 class="text-3xl font-bold text-primary-950 mb-2">سجل ابنك الآن</h2>
+                    <p class="text-gray-500 mb-8">املأ النموذج وسيقوم فريق القبول بالتواصل معك.</p>
+                    
+                    <form id="registrationForm" class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">اسم ولي الأمر</label>
+                                <input type="text" id="parentName" class="w-full h-10 px-3 rounded-md border border-gray-300 focus:border-primary-950 focus:ring-1 focus:ring-primary-950 outline-none transition-all" placeholder="محمد أحمد">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">رقم الهاتف</label>
+                                <input type="tel" id="phone" class="w-full h-10 px-3 rounded-md border border-gray-300 focus:border-primary-950 focus:ring-1 focus:ring-primary-950 outline-none transition-all" placeholder="05xxxxxxxx">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">البريد الإلكتروني (اختياري)</label>
+                            <input type="email" id="email" class="w-full h-10 px-3 rounded-md border border-gray-300 focus:border-primary-950 focus:ring-1 focus:ring-primary-950 outline-none transition-all" placeholder="example@mail.com">
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">اسم الطالب</label>
+                                <input type="text" id="studentName" class="w-full h-10 px-3 rounded-md border border-gray-300 focus:border-primary-950 focus:ring-1 focus:ring-primary-950 outline-none transition-all" placeholder="اسم الطالب الثلاثي">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">المرحلة الدراسية</label>
+                                <select id="grade" class="w-full h-10 px-3 rounded-md border border-gray-300 focus:border-primary-950 focus:ring-1 focus:ring-primary-950 outline-none transition-all bg-white">
+                                    <option value="">اختر المرحلة</option>
+                                    <option value="kg">رياض الأطفال</option>
+                                    <option value="primary">الابتدائية</option>
+                                    <option value="middle">المتوسطة</option>
+                                    <option value="high">الثانوية</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="w-full bg-primary-950 hover:bg-primary-900 text-white font-bold py-3 rounded-lg transition-all mt-4 flex items-center justify-center gap-2">
+                            <span>إرسال الطلب</span>
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="bg-primary-900 p-8 md:p-12 w-full md:w-1/3 text-white flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold mb-6 text-accent-400">لماذا تختارنا؟</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-accent-400 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-300 text-sm">كادر تعليمي ذو كفاءة عالية وخبرة طويلة.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-accent-400 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-300 text-sm">مناهج دراسية حديثة تدعم التفكير النقدي.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-accent-400 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-300 text-sm">أنشطة لاصفية ورياضية متنوعة.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-accent-400 mt-1 flex-shrink-0"></i>
+                                <span class="text-gray-300 text-sm">بيئة آمنة ومحفزة للتعلم.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <p class="text-sm text-gray-400 mb-2">للاستفسار تواصل معنا:</p>
+                        <p className="text-lg font-bold text-white flex items-center gap-2">
+                            <i data-lucide="phone" className="w-4 h-4"></i>
+                            920000000
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-950 text-white pt-16 pb-8 border-t border-primary-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 text-2xl font-extrabold mb-4">
+                        <div class="bg-accent-400 text-primary-950 p-1.5 rounded-lg">
+                            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                        </div>
+                        <span>مدرسة التفوق</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed max-w-sm">
+                        نسعى لتقديم تجربة تعليمية فريدة تُمكّن طلابنا من تحقيق طموحاتهم وتكون لهم حجر أساس في بناء مستقبلهم.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-accent-400">روابط سريعة</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition-colors">الرئيسية</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">عن المدرسة</a></li>
+                        <li><a href="#registration" class="hover:text-white transition-colors">التسجيل</a></li>
+                        <li><a href="#infrastructure" class="hover:text-white transition-colors">المرافق</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4 text-accent-400">تواصل معنا</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="map-pin" className="w-4 h-4"></i>
+                             دمشق، الجمهورية العربية السورية
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <i data-lucide="mail" className="w-4 h-4"></i>
+                              info@altafawuq.edu.sa
+                        </li>
+                    </ul>
+                    <div class="flex gap-4 mt-6">
+                        <a href="#" className="text-gray-400 hover:text-white transition-colors"><i data-lucide="twitter" className="w-5 h-5"></i></a>
+                        <a href="#" className="text-gray-400 hover:text-white transition-colors"><i data-lucide="instagram" className="w-5 h-5"></i></a>
+                        <a href="#" className="text-gray-400 hover:text-white transition-colors"><i data-lucide="youtube" className="w-5 h-5"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-primary-800 pt-8 text-center text-grey-50 text-sm">
+                <p>جميع الحقوق محفوظة © 2026 مدرسة التفوق</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="fixed bottom-6 left-6 z-50 flex flex-col gap-3 pointer-events-none"></div>
+
+    <script src="main.js">
+    </script>
+</body>
+</html>
