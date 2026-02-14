@@ -36,12 +36,8 @@
             }
         }
 
-
-
         document.addEventListener('DOMContentLoaded', () => {
-            
             lucide.createIcons();
-
             const mobileMenuBtn = document.getElementById('mobile-menu-btn');
             const mobileMenu = document.getElementById('mobile-menu');
 
@@ -55,7 +51,7 @@
                         mobileMenu.classList.add('hidden');
                     });
                 });
-            }
+            } 
 
             const navbar = document.getElementById('navbar');
             window.addEventListener('scroll', () => {
